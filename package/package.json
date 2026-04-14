@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@eslint/eslintrc": "^3.3.5",
     "@iconify/icons-ion": "^1.2.10",
     "@iconify/react": "^5.0.1",
     "aos": "^2.3.4",
