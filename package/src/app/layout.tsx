@@ -2,7 +2,6 @@ import { Poppins } from 'next/font/google'
 import './globals.css'
 import Header from '@/app/components/Layout/Header'
 import Footer from '@/app/components/Layout/Footer'
-import ScrollToTop from '@/app/components/ScrollToTop'
 import { Providers } from './Providers'
 import { Toaster } from 'react-hot-toast'
 import CartDrawer from '@/app/components/Order/CartDrawer'
@@ -26,7 +25,6 @@ export default function RootLayout({
           <CartDrawer />
           {children}
           <Footer />
-          <ScrollToTop />
         </Providers>
       </body>
     </html>
