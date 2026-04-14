@@ -59,7 +59,7 @@ const FloatingAIChat = () => {
       setMessages(prev => [...prev, { 
         id: Date.now().toString() + 'ai', 
         role: 'assistant', 
-        content: aiResponse.message || aiResponse.content || 'Đây là gợi ý của mình dành cho bạn.',
+        content: aiResponse.reply || aiResponse.message || aiResponse.content || 'Đây là gợi ý của mình dành cho bạn.',
         smartComponent: aiResponse.suggestedItem ? {
           id: aiResponse.suggestedItem.id || 'ai-gen-id',
           name: aiResponse.suggestedItem.name,
