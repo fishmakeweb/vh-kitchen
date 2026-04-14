@@ -29,9 +29,9 @@ export default function AdminDashboardPage() {
         
         // Map the real data to our metrics format, with fallbacks if properties are missing
         setMetrics({
-          totalRevenue: data.totalRevenue || 0,
+          totalRevenue: data.totalSales || 0,
           totalOrders: data.totalOrders || 0,
-          totalCustomers: data.totalCustomers || 0,
+          totalCustomers: data.activeUsers || 0,
           pendingOrders: data.pendingOrders || 0,
           revenueTrend: data.revenueTrend || 0,
           ordersTrend: data.ordersTrend || 0,
